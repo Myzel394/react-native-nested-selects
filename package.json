@@ -1,6 +1,6 @@
 {
   "name": "react-native-nested-selects",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "This package allows you to easily create nested selects. Supported are static and dynamic selects. For own behaviour you can create your own components by subclassing and implementing only three required functions!",
   "main": "index.js",
   "scripts": {

@@ -15,14 +15,36 @@ export interface DataObject {
 export type DataList = Array<DataObject>;
 
 export interface AbstractBaseInterface {
+    /**
+     * Default render as you know
+     */
     render(): React.ReactNode;
 
+    /**
+     * This returns the current available selects. This DOES NOT change the selects. Use `moveForward` to change the
+     * current selects!
+     * @return: Array of DataObject
+     */
     getLayer(): Array<DataObject>;
 
+    /**
+     * This changes the current selects.
+     * E.g.: StaticSelect has got an `index` and in this function the index will be add by 1.
+     * If there are no selects available, return `false`. If there are selects available, return nothing (aka. `void`).
+     * @param item
+     */
     moveForward(item: DataObject): void | false;
 
+    /**
+     * You will probably not override that.
+     * Will be called after `moveForward` returns `false`.
+     */
     stopNow(): void;
 
+    /**
+     * Resets everything. Will also be called on initialization.
+     * @param isInitial: boolean - Whether this is called on initialization.
+     */
     reset(isInitial: boolean): void;
 }
 
@@ -55,6 +77,9 @@ export abstract class DefaultSelect<P extends Props, S extends States, T = any> 
 
     render(): React.ReactNode {
         if (this.done) {
+            // Return nothing to avoid showing last selects again.
+            console.warn(`Component ${this} shouldn't be visible anymore. 
+            Did you forget to call \`.reset()\` or to properly set the visibility?`);
             return null;
         }
         // @ts-ignore
