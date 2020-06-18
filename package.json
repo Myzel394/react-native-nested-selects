@@ -1,0 +1,43 @@
+{
+  "name": "react-native-nested-selects",
+  "version": "1.0.0",
+  "description": "This package allows you to easily create nested selects. Supported are static and dynamic selects. For own behaviour you can create your own components by subclassing and implementing only three required functions!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Myzel394/react-native-nested-selects.git"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "react-native",
+    "react-component",
+    "react-native-component",
+    "mobile",
+    "react-native-selects",
+    "select",
+    "selects",
+    "nested",
+    "nested-selects",
+    "static-selects",
+    "dynamic-selects"
+  ],
+  "author": "Myzel394",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Myzel394/react-native-nested-selects/issues"
+  },
+  "homepage": "https://github.com/Myzel394/react-native-nested-selects#readme",
+  "peerDependencies": {
+    "react-native": "*",
+    "react": "*"
+  },
+  "dependencies": {
+    "react-native": "^0.62.2",
+    "react-native-modal": "^11.5.6",
+    "string-constants": "0.0.12"
+  }
+}

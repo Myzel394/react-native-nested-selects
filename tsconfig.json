@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "lib": ["es6"],
+    "jsx": "react",
+    "target": "ES6",
+    "moduleResolution": "node"
+  }
+}
