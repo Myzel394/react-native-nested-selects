@@ -1,3 +1,7 @@
+# ATTENTION
+THIS PROJECT IS ARCHIVED! This is a really bad project I made as a junior, don't use it, it will be deleted soon. 
+
+
 # react-native-nested-selects
 This package allows you to easily create nested selects. 
 Supported are static and dynamic selects. 
